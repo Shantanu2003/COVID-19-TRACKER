@@ -45,11 +45,11 @@ def main():
 # GUI making
 root = tk.Tk()   #root is the name for a tkinter class
 root.geometry("900x800")  #size of the window
-root.iconbitmap("logo.ico")
+root.iconbitmap("logo.ico")   #to add logo
 root.title("COVID-19 CASES TRACKER-INDIA")  #heading
 root.configure(background='pink')  #bg colour
-f= ["poppins", 25, "bold"]  #font of text
-ban=tk.PhotoImage(file="ban.png")
+f= ["Algerian", 25, "bold"]  #font of text
+ban=tk.PhotoImage(file="ban.png")  # to add banner at centre
 banLabel=tk.Label(root, image=ban)
 banLabel.pack()
 mainLabel=tk.Label(root,text=get_covid_detail(),font=f,background='skyblue')   #calling the data
